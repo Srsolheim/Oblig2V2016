@@ -17,9 +17,9 @@ public abstract class Kort {
 	}
 	
 	private void setKortnummer() {
-		int kortnummer = (int)(Math.random() * (100000000 - 10000000) + 10000000);
+		int kortnummer = (int)(Math.random() * (10000 - 1000) + 1000);
 			while(alleKortnummer.contains(kortnummer)) {
-				kortnummer = (int)(Math.random() * (100000000 - 10000000) + 10000000);
+				kortnummer = (int)(Math.random() * (10000 - 1000) + 1000);
 		}
 		alleKortnummer.add(kortnummer);
 		this.kortnummer = kortnummer;
